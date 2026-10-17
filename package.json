@@ -1,0 +1,38 @@
+{
+  "name": "telar-simulator-backend",
+  "version": "1.0.0",
+  "description": "Servicio backend independiente para simulación telemétrica en tiempo real y generación histórica de energía solar y consumo para TelarMonitor",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "seed:7": "tsx scripts/seedCli.ts --days=7",
+    "seed:30": "tsx scripts/seedCli.ts --days=30"
+  },
+  "keywords": [
+    "energy-simulation",
+    "solar-monitoring",
+    "clean-architecture",
+    "websocket",
+    "express",
+    "iot-telemetry"
+  ],
+  "author": "Telar Monitor Team",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.9",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
