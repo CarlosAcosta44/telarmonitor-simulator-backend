@@ -1,6 +1,6 @@
 {
   "name": "telar-simulator-backend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Servicio backend independiente para simulación telemétrica en tiempo real y generación histórica de energía solar y consumo para TelarMonitor",
   "main": "dist/index.js",
   "scripts": {
